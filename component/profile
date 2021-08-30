@@ -1,0 +1,10 @@
+import React,from 'react'
+import{View,Text} from 'react-native'
+const profile=()=>{
+    return(
+        <View>
+        <Text style={{fontsize:80}}/> component profile </Text>
+        <view>
+    )
+}
+export default profile;
