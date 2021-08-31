@@ -18,7 +18,7 @@ const UserChoice = () => {
         alignItems: 'center',
       }}>
         <TextInput style={{backgroundColor:"red"}} placeholder="Email adresss" />
-      <TouchableOpacity>
+      
         <View
           style={{
             height: 30,
@@ -30,7 +30,7 @@ const UserChoice = () => {
           }}>
           <Text>Log In</Text>
         </View>
-      </TouchableOpacity>
+     
     </View>
   );
 };
