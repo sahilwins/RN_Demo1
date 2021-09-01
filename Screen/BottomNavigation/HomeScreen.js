@@ -7,10 +7,12 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.maineContainer}>
+      <FontAwesome name='home'/>
       <View style={styles.secondaryView}>
         <Text style={styles.HelloText}>Hello</Text>
         
