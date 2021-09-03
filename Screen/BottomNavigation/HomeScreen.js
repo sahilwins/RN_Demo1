@@ -7,26 +7,47 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.maineContainer}>
-      <FontAwesome name='home'/>
+      <FontAwesome
+        name={"subway"}
+        size={50}
+        color="skyblue"
+        alignSelf="flex-start"
+      />
+      <FontAwesome
+        name={"home"}
+        size={40}
+        style={{ color: "black", alignSelf: "flex-start" }}
+      />
       <View style={styles.secondaryView}>
-        <Text style={styles.HelloText}>Hello</Text>
-        
+        <Text style={styles.HelloText}>Kevin</Text>
+
         <Text style={{ margin: 5, alignSelf: "flex-start" }}>Welcome!</Text>
         <TextInput placeholder="Email" style={styles.frog} />
         <TextInput placeholder="Password" style={styles.frog} />
         <TouchableOpacity onPress={() => alert("Log in pressed")}>
           <View style={styles.LOGinView}>
             <Text style={{ color: "white" }}>Log in</Text>
-            
           </View>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Text style={{fontSize:20, borderRadius:20,paddingHorizontal: 10,color: "#f6a38b",marginTop:40,backgroundColor:'black'}}>Forgot password</Text>
+          <Text
+            style={{
+              fontSize: 20,
+              paddingHorizontal: 20,
+              borderRadius: 50,
+              color: "black",
+              fontWeight: "bold",
+              marginTop: 40,
+              backgroundColor: "yellow",
+            }}
+          >
+            Forgot password
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -40,6 +61,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
+    height: 20,
   },
   secondaryView: {
     paddingHorizontal: 40,
