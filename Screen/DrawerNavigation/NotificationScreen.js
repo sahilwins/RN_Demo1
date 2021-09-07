@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 const NotificationScreen = () => {
   return (
     <SafeAreaView>
-      <Text>hey i am notification screen</Text>
+      <Text> No Connection BRO</Text>
     </SafeAreaView>
   );
 };

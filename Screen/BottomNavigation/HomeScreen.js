@@ -9,20 +9,28 @@ import {
 } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.maineContainer}>
+      
       <FontAwesome
         name={"subway"}
         size={50}
         color="skyblue"
-        alignSelf="flex-start"
-      />
-      <FontAwesome
-        name={"home"}
-        size={40}
-        style={{ color: "black", alignSelf: "flex-start" }}
-      />
+        />
+        
+       
+      
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+      
+        <FontAwesome
+          name={"home"}
+          size={40}
+          style={{ color: "black", alignSelf: "flex-start",width:370,height:200}}
+        />
+        
+      </TouchableOpacity>
+
       <View style={styles.secondaryView}>
         <Text style={styles.HelloText}>Kevin</Text>
 
