@@ -1,5 +1,7 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - BVLinearGradient (2.5.6):
+    - React
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.64.2)
   - FBReactNativeSpec (0.64.2):
@@ -275,6 +277,9 @@ PODS:
     - React
   - RNGestureHandler (1.10.3):
     - React-Core
+  - RNLockScreen (1.0.2):
+    - React
+    - TQGestureLockView (~> 0.1.1)
   - RNReanimated (2.2.0):
     - DoubleConversion
     - FBLazyVector
@@ -309,9 +314,11 @@ PODS:
     - React-RCTImage
   - RNVectorIcons (8.1.0):
     - React-Core
+  - TQGestureLockView (0.1.1)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -345,6 +352,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNLockScreen (from `../node_modules/react-native-lock-screen/ios`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -353,8 +361,11 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - TQGestureLockView
 
 EXTERNAL SOURCES:
+  BVLinearGradient:
+    :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -417,6 +428,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNLockScreen:
+    :path: "../node_modules/react-native-lock-screen/ios"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -428,6 +441,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
   FBReactNativeSpec: 1d1580c96304be771088daf3245ecd81548f6128
@@ -459,9 +473,11 @@ SPEC CHECKSUMS:
   ReactCommon: 149906e01aa51142707a10665185db879898e966
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
+  RNLockScreen: 2c54ad19d89a7675eba5dfc9ec4738981ebd3bf7
   RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
   RNScreens: 01ab149b5dd5c27f5ff26741b1d2bdf2cee1af35
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
+  TQGestureLockView: 62eb45b25889c9b3ffe2a99d06b1e586cb744ccd
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
 PODFILE CHECKSUM: 5bec8eb921d1a3de2776f1396f6e85e8e6e2cf60

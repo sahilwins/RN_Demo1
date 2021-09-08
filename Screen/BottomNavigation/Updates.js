@@ -1,41 +1,48 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Feather from "react-native-vector-icons/Feather";
-const ExampleScreen = () => {
+import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+
+const Updates = () => {
   return (
-    <View style={{ flex: 1, padding: 10 }}>
-      <View
-        style={{
-          flex: 1,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "green",
-        }}
-      ></View>
-      <View
-        style={{
-          flex: 1,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "white",
-          justifyContent: "center",
-          alignItems:"center"
-        }}
+    <SafeAreaView style={{ flex: 1 }}>
+      <LinearGradient
+        colors={["#2C90FF", "#2C609A"]}
+        start={{ x: 0.0, y: 0.88 }}
+        end={{ x: 1.8, y: 0.5 }}
+        locations={[0, 0.5]}
+        style={styles.linearGradient}
       >
-        <Feather name="aperture" size={100} color="blue" />
-      </View>
-      <View
-        style={{
-          flex: 1,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "orange",
-        }}
-      ></View>
-    </View>
+        <View>
+          <Image
+            style={styles.face}
+            source={require("../assets/applogo.png")}
+          />
+          <Text style={styles.buttonText}>Virtare Health</Text>
+        </View>
+      </LinearGradient>
+    </SafeAreaView>
   );
 };
 
-export default ExampleScreen;
+export default Updates;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  face: {
+    justifyContent: "center",
+    alignSelf: "center",
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 17,
+    paddingRight: 17,
+    borderRadius: 2,
+    justifyContent: "center",
+  },
+  buttonText: {
+    fontSize: 30,
+
+    textAlign: "center",
+    margin: 10,
+    color: "#ffffff",
+  },
+});

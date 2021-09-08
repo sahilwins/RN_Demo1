@@ -29,7 +29,7 @@ const DrawerScreen = () => {
   ) : (
     <NoConnectionScreen />
   );
-  };
+};
 
 export default DrawerScreen;
 

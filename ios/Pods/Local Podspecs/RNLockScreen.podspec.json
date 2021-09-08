@@ -1,0 +1,29 @@
+{
+  "name": "RNLockScreen",
+  "version": "1.0.2",
+  "summary": "React Native: Native Lock Screen",
+  "description": "React Native: Native Lock Screen",
+  "homepage": "https://github.com/prscX/react-native-lock-screen.git",
+  "license": "Apache License",
+  "authors": "Pranav Raj Singh Chauhan",
+  "source": {
+    "git": "https://github.com/prscX/react-native-lock-screen.git",
+    "tag": "master"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "preserve_paths": [
+    "LICENSE",
+    "package.json"
+  ],
+  "source_files": "**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ],
+    "TQGestureLockView": [
+      "~> 0.1.1"
+    ]
+  }
+}
