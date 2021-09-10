@@ -1,45 +1,4 @@
-// import React from "react";
-// import {
-//   Text,
-//   View,
-//   TextInput,
-//   Button,
-//   SafeAreaView,
-//   StyleSheet,
-//   TouchableOpacity,
-// } from "react-native";
-// const SettingScreen = () => {
-//   return (
-//     <SafeAreaView style={{ flex: 1, backgroundColor: "red" }}>
-//       <TextInput placeholder="value" style={styles.camp} />
-//       <TouchableOpacity>
-//         <Text style={styles.pop}>Ok</Text>
-//       </TouchableOpacity>
-//       <TextInput style={styles.pop} placeholder="length of value"></TextInput>
-//     </SafeAreaView>
-//   );
-// };
-// export default SettingScreen;
-// const styles = StyleSheet.create({
-//   camp: {
-//     color: "black",
-//     backgroundColor: "yellow",
-//     marginTop: 200,
-//     justifyContent: "center",
-//     height: 30,
-//     width: 250,
-//     textAlign: "center",
-//     paddingHorizontal: 10,
-//   },
-//   pop: {
-//     backgroundColor: "#0666ac",
-//     marginTop: 20,
-//     justifyContent: "center",
-//     backgroundColor: "pink",
-//     color: "black",
-//     textAlign:'center'
-//   },
-// });
+
 import React, { useState } from "react";
 import {
   StyleSheet,

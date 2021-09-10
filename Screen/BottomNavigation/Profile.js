@@ -7,6 +7,7 @@ import {
   ScrollView,
   Button,
 } from "react-native";
+import LinearGradient from "react-native-linear-gradient";
 import { min } from "react-native-reanimated";
 import { useEffect } from "react/cjs/react.development";
 
@@ -17,13 +18,35 @@ const Profile = () => {
   });
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Button title="Dec" onPress={() => setCount(Math.max(count - 1, 0))} />
-      <ScrollView style={{ marginHorizontal: 20, backgroundColor: "pink" }}>
-        <View style={{ width: 200 }}>
-          <Text>{count}</Text>
-        </View>
-      </ScrollView>
-      <Button title="inc" onPress={() => setCount(Math.min(count + 1))} />
+      <LinearGradient
+        style={{ flex: 1 }}
+        colors={["#2C90FF", "#2C609A"]}
+        start={{ x: 0.0, y: 0.88 }}
+        end={{ x: 1.8, y: 0.5 }}
+        locations={[0, 0.5]}
+      >
+        <Text>hello</Text>
+
+        <Button
+          title="Dec"
+          color="white"
+          onPress={() => setCount(Math.max(count - 1, 0))}
+        />
+
+        <ScrollView
+          style={{ marginHorizontal: 20, backgroundColor: "FF#2C90" }}
+        >
+          <View style={{ width: 200 }}>
+            <Text>{count}</Text>
+          </View>
+        </ScrollView>
+
+        <Button
+          title="inc"
+          color="white"
+          onPress={() => setCount(Math.min(count + 1))}
+        />
+      </LinearGradient>
     </SafeAreaView>
   );
 };

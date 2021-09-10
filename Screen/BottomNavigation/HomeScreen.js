@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation }) => {
     <SafeAreaView style={styles.maineContainer}>
       
       <FontAwesome
-        name={"subway"}
+        
         size={50}
         color="skyblue"
         />
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white",
+    backgroundColor: '#2C90FF',
     height: 20,
   },
   secondaryView: {

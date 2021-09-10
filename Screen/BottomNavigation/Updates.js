@@ -1,18 +1,24 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, Image,ActivityIndicator } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
 const Updates = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
+      
       <LinearGradient
-        colors={["#2C90FF", "#2C609A"]}
+     
+      colors={["#2C90FF", "#2C609A"]}
         start={{ x: 0.0, y: 0.88 }}
         end={{ x: 1.8, y: 0.5 }}
         locations={[0, 0.5]}
+        
         style={styles.linearGradient}
       >
         <View>
+        <ActivityIndicator size="large" color='yellow' />
+        <ActivityIndicator size='small' color='white'/>
+        <ActivityIndicator />
           <Image
             style={styles.face}
             source={require("../assets/applogo.png")}

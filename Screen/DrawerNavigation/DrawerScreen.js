@@ -8,6 +8,7 @@ import BottomScreen from "../BottomNavigation/BottomScreen";
 import SettingScreen from "../BottomNavigation/SettingScreen";
 import checkConnected from "./NotificationScreen";
 import NoConnectionScreen from "./HomeScreen";
+import Figma from "./Figma";
 
 const Drawer = createDrawerNavigator();
 
@@ -25,6 +26,7 @@ const DrawerScreen = () => {
       <Drawer.Screen name="Home" component={BottomScreen} />
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="setting" component={SettingScreen} />
+      <Drawer.Screen name="Figma" component={Figma} />
     </Drawer.Navigator>
   ) : (
     <NoConnectionScreen />

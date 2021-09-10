@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View,Button} from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./HomeScreen";
 import SettingScreen from "./SettingScreen";
@@ -7,6 +7,7 @@ import Profile from "./Profile";
 import Updates from "./Updates";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import PluseButton from "./PluseButton";
 const Tab = createBottomTabNavigator();
 
 const BottomScreen = () => {
@@ -29,6 +30,28 @@ const BottomScreen = () => {
           tabBarLabel: "Setting",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="settings" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="PluseButton"
+        component={PluseButton}
+        options={{
+          tabBarLabel: "Plus",
+          tabBarIcon: ({ color, size, focused }) => (
+            <View
+              style={{
+                top: -25,
+                backgroundColor: focused ? "orange" : "white",
+                height: 50,
+                width: 50,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 30,
+              }}
+            >
+              <MaterialCommunityIcons name="plus" color={color} size={size} />
+            </View>
           ),
         }}
       />
