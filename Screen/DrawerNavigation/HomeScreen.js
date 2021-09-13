@@ -19,7 +19,7 @@ import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 const HomeScreen = () => {
   return (
     <SafeAreaView
-      style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+      style={{ flex: 1, justifyContent: "", alignItems: "center" }}
     >
       <Image
         style={{ width:200,height:200, borderRadius: 20 }}

@@ -7,7 +7,7 @@ import Profile from '../Profile';
 import Devlopment from '../Routes/Devlopment';
 import MainHomeScreen from '../MainHomeScreen';
 import UserHistory from '../UserHistory';
-
+import Data from './Data';
 const Shahil = createStackNavigator();
 
 const StackScreen = () => {
@@ -19,8 +19,9 @@ const StackScreen = () => {
       <Shahil.Screen component={MainHomeScreen} name="MainHomeScreen" />
       <Shahil.Screen component={UserHistory} name="UserHistory" />
       <Shahil.Screen component={UserChoice} name="UserChoice" />
+   
 
-      {/* <Shahil.Screen component={StackScreen} name="StackScreen" /> */}
+       <Shahil.Screen component={StackScreen} name="StackScreen" />
     </Shahil.Navigator>
   );
 };

@@ -42,7 +42,7 @@ const BottomScreen = () => {
             <View
               style={{
                 top: -25,
-                backgroundColor: focused ? "orange" : "white",
+                backgroundColor: focused ? "orange" : "black",
                 height: 50,
                 width: 50,
                 justifyContent: "center",
