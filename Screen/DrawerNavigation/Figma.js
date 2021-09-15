@@ -4,8 +4,8 @@ import { TextInput } from 'react-native-gesture-handler'
 
 const Figma = () => {
     return (
-        <SafeAreaView style={{alignItems:"center",
-        backgroundColor:'grey',
+        <SafeAreaView style={{flex:1,justifyContent:"center",
+        
         color:'red'
         
         }}>

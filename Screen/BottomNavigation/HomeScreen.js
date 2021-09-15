@@ -6,12 +6,14 @@ import {
   SafeAreaView,
   StyleSheet,
   TouchableOpacity,
+  ImageBackground
 } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const HomeScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const Image=require("../assets/hike.jpeg")
 
   const OnPress = () => {
     if (!email) {
@@ -25,6 +27,11 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.maineContainer}>
+      <ImageBackground
+      style={{flex:1}} 
+      source={Image}>
+
+
       <FontAwesome size={50} color="skyblue" />
 
       <TouchableOpacity onPress={() => navigation.openDrawer()}>
@@ -43,7 +50,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.secondaryView}>
         <Text style={styles.HelloText}>Kevin</Text>
 
-        <Text style={{ margin: 5, alignSelf: "flex-start" }}>Welcome!</Text>
+        <Text style={{ margin: 5, alignSelf: "flex-start", }}>Welcome!</Text>
         <TextInput
           placeholder="Email"
           value={email}
@@ -78,6 +85,7 @@ const HomeScreen = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
+      </ImageBackground>
     </SafeAreaView>
   );
 };
